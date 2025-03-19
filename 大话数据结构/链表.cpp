@@ -28,7 +28,7 @@ void insertAtHead(Node** head, int data) {
 void deleteNode(Node** head, int key) {
     Node* temp = *head, *prev = NULL; // 修正：*head 而不是 *had
     if (temp != NULL && temp->val == key) { // 修正：val 而不是 DATA
-        *head = temp->next;
+        head = temp->next;
         free(temp);
         return;
     }

@@ -1,0 +1,12 @@
+unordered_set<int> set;
+set.insert(10); // 插入元素 10
+
+if (set.count(10)) {
+    cout << "元素 10 存在" << endl;
+}
+
+set.erase(10); // 删除元素 10
+
+for (int x : set) {
+    cout << x << " ";
+}
